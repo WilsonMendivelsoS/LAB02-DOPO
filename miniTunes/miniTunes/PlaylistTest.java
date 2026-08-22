@@ -66,6 +66,27 @@ public class PlaylistTest{
        assertEquals(new Playlist(songs),new Playlist(sameSongs));
     }
     
+    @Test
+    public void shouldPass(){
+       int i = 1;
+       
+       assertTrue(i==1);
+    }
+    
+    @Test
+    public void shouldFail(){
+       int i = 2;
+       
+       assertFalse(i==1);    
+    }
+    
+    @Test
+    public void shouldErr(){
+        int i = 1/0;
+        
+        assertTrue(i == 1);
+    }
+    
     /**
      * Tears down the test fixture.
      *
